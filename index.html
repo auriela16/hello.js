@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My First Page</title>
+        <style>
+            body { font-family: 'Times New Roman'; text-align: center; margin-top: 50px; }
+            h1 { color: orange;}
+            button { padding: 10px 20px; background: teal; color: white; border: none; border-radius: 6px; cursor: pointer; }
+            <ul><li>HTML</li><li>CSS</li><li>JavaScript</li><?ul>
+        </style>
+    </head>
+    <body>
+        <h1 id="title">Hello, world</h1>
+        <button onclick="greet()">Click me</button>
+
+        <script>
+            function greet() {
+                const person = prompt("What is your name?");
+                if (person) {
+                document.getElementById("title").textContent = `Welcome, ${person}!`;
+            } else {
+                document.getElementById("title").textContent ="Welcome, Stranger!";
+            }
+        }
+        </script>
+    </body>
+</html>
