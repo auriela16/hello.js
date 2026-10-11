@@ -6,12 +6,17 @@
             body { font-family: 'Times New Roman'; text-align: center; margin-top: 50px; }
             h1 { color: orange;}
             button { padding: 10px 20px; background: teal; color: white; border: none; border-radius: 6px; cursor: pointer; }
-            <ul><li>HTML</li><li>CSS</li><li>JavaScript</li><?ul>
+            ul { list-style-position: inside; }
         </style>
     </head>
     <body>
         <h1 id="title">Hello, world</h1>
         <button onclick="greet()">Click me</button>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
 
         <script>
             function greet() {
